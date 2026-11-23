@@ -5,7 +5,6 @@ import 'package:arcade_motoru/arena.dart';
 import 'package:flutter/material.dart';
 import 'package:studio_core/app/arcade_stage.dart';
 import 'package:studio_core/app/game_api.dart';
-import 'package:studio_core/core/game_rules.dart';
 
 const uzayatisiId = 'oyun-uzay-atisi';
 
@@ -88,7 +87,7 @@ final uzayatisiConfig = GameConfig(
   rules: uzayatisiRules,
   buildPlay: (ctx) => ArcadeStage(
     ctx: ctx,
-    create: () => uzayatisiRules.createSim((ctx.generated as GeneratedLevel).puzzle),
+    create: () => uzayatisiRules.createSim(ctx.generated.puzzle),
     paint: (c, s, p, t) {
       arcadeLang = ctx.lang;
       paintArena(c, s, p, t);
