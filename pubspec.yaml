@@ -16,7 +16,7 @@ dependencies:
   arcade_motoru:
     git:
       url: https://github.com/taktemurr-ops/arcade-motoru
-      ref: c64e87bdc24c8d88aa677218baab29150955b71d
+      ref: c1547fd3b814b320215bc76d5c42fb1116bb6f43
 
 dev_dependencies:
   flutter_test:
